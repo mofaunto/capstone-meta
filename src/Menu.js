@@ -15,7 +15,7 @@ const Menu = () => {
       </div>
 
       <div className="cards">
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "20rem" }}>
           <Card.Img variant="top" src={salad} />
           <Card.Body>
             <Card.Title>Greek Salad</Card.Title>
@@ -26,7 +26,7 @@ const Menu = () => {
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "20rem" }}>
           <Card.Img variant="top" src={bruchetta} />
           <Card.Body>
             <Card.Title>Bruchetta</Card.Title>
@@ -37,14 +37,14 @@ const Menu = () => {
           </Card.Body>
         </Card>
 
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "20rem" }}>
           <Card.Img variant="top" src={dessert} />
           <Card.Body>
             <Card.Title>Lemon Dessert</Card.Title>
             <Card.Text>
               Our great greek salad with our famous lemon sauce
             </Card.Text>
-            <Button variant="primary">Order Online</Button>
+            <Button variant="primary">Order Online</Button>{" "}
           </Card.Body>
         </Card>
       </div>
