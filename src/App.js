@@ -1,11 +1,17 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Little lemon start</h1>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
