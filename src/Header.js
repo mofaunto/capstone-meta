@@ -5,13 +5,15 @@ import Logo from "./icons_assets/Logo.svg";
 function Header() {
   return (
     <>
-      <header>
-        <img src={Logo} alt="Logo" />
-        <h1>Testing</h1>
+      <header className="header">
+        <div className="logo">
+          <img src={Logo} alt="Logo" />
+        </div>
+
+        <div className="navigation">
+          <Nav />
+        </div>
       </header>
-      <div>
-        <Nav></Nav>
-      </div>
     </>
   );
 }
