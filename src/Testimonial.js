@@ -14,28 +14,28 @@ const Testimonial = () => {
 
         <div className="review-container">
           <div className="review">
-            <img src={ratings} alt="ratings" id="rating" />
             <img src={profile1} alt="Content Customer" id="profile" />
-            <h2>Customer name</h2>
-            <p>Great place</p>
+            <img src={ratings} alt="ratings" id="rating" />
+            <h2>Katie</h2>
+            <p>Their salad was the best one I tried in Chicago</p>
           </div>
           <div className="review">
-            <img src={ratings} alt="ratings" id="rating" />
             <img src={profile2} alt="Content Customer" id="profile" />
-            <h2>Customer name</h2>
-            <p>Great place</p>
+            <img src={ratings} alt="ratings" id="rating" />
+            <h2>Hector</h2>
+            <p>Great location and great customer service!</p>
           </div>
           <div className="review">
-            <img src={ratings} alt="ratings" id="rating" />
             <img src={profile3} alt="Content Customer" id="profile" />
-            <h2>Customer name</h2>
-            <p>Great place</p>
+            <img src={ratings} alt="ratings" id="rating" />
+            <h2>Marissa</h2>
+            <p>My compliments to the chefs!</p>
           </div>
           <div className="review">
-            <img src={ratings} alt="ratings" id="rating" />
             <img src={profile4} alt="Content Customer" id="profile" />
-            <h2>Customer name</h2>
-            <p>Great place</p>
+            <img src={ratings} alt="ratings" id="rating" />
+            <h2>John</h2>
+            <p>Wish there were more locations, great food</p>
           </div>
         </div>
       </div>

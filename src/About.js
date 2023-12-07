@@ -6,13 +6,12 @@ const About = () => {
     <>
       <div className="about">
         <div className="about-content">
-          <h4>Little Lemon</h4>
-          <h5>Chicago</h5>
+          <h1>Little Lemon</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-            ut saepe, dignissimos, molestiae et eligendi obcaecati deleniti
-            reiciendis cum nihil inventore placeat a quaerat maiores nostrum
-            sit? Aspernatur, nihil asperiores.
+            We at Little Lemon, try our best to bring the authentic
+            Mediterranian cuisine since 2010. Our Chefs Mario and Adrian are
+            ready to serve any of your culinary needs, so come meet them in our
+            cozy restaurant and feel the taste of the Mediterranian!
           </p>
         </div>
 

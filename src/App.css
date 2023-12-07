@@ -37,9 +37,9 @@ ul {
   height: auto;
 }
 
-/* Header viewports */
+/* Header media queries */
 
-@media (max-width: 1050px) {
+@media (max-width: 1280px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -48,13 +48,14 @@ ul {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1280px) {
   .logo img {
     width: 75%;
+    margin: 1rem;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1280px) {
   .header {
     display: flex;
     justify-content: center;
@@ -290,6 +291,14 @@ h5 {
   margin-top: 4rem;
 }
 
+@media (min-width: 800px) and (max-width: 1100) {
+  .specials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .specials-head {
   display: flex;
   flex-wrap: wrap;
@@ -367,16 +376,14 @@ h5 {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 70vh;
   background-color: #495e57;
   text-align: center;
-  padding-top: 1em;
+  margin-top: 4rem;
+  padding: 2rem;
 }
 
 .testimonial-header {
-  font-family: "Markazi Text", serif;
-  font-size: 60px;
-  font-weight: 700;
   width: 100%;
   color: #f4ce14;
 }
@@ -384,20 +391,16 @@ h5 {
 .review-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
 .review {
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
   background-color: #fff;
-  margin: 2em;
+  margin-left: 2rem;
+  margin-right: 2rem;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.review p {
-  font-family: "Karla", sans-serif;
 }
 
 @media (max-width: 1050px) {
@@ -407,34 +410,36 @@ h5 {
 }
 
 #profile {
-  width: 30%;
-  border-radius: 50%;
-  margin: 1em;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 #rating {
   width: 50%;
-  display: block;
-  margin: 10px auto;
 }
 
 .review h2 {
-  font-family: "Markazi Text", serif;
   font-size: 25px;
   color: #000;
   text-align: center;
-  margin: 0.1em;
+  margin-top: 2rem;
 }
 
 /* About section */
 
 .about {
   display: flex;
+  align-items: center;
   width: 100%;
   height: auto;
   padding: 3em 0;
-  margin-top: 5em;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 800px) {
@@ -455,12 +460,15 @@ h5 {
   }
 }
 
+.about-content h1 {
+  color: #495e57;
+}
+
 .about-content p {
-  font-family: "Karla", sans-serif;
   font-size: 18px;
-  line-height: 1.7em;
-  color: #000;
-  margin-top: -1em;
+  line-height: 2rem;
+  color: #333;
+  margin-top: 1rem;
 }
 
 @media (max-width: 1050px) {
@@ -470,7 +478,7 @@ h5 {
 }
 
 .owner {
-  width: 50%;
+  width: 60%;
 }
 
 @media (max-width: 800px) {
@@ -483,17 +491,17 @@ h5 {
 #chefs {
   width: 50%;
   height: 60%;
-  margin-top: 1em;
-  margin-left: 10em;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-left: 12rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 #interior {
-  width: 40%;
+  width: 50%;
   height: 60%;
-  margin-top: -10em;
-  margin-left: 2em;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-top: -8rem;
+  margin-left: 2rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -514,7 +522,8 @@ h5 {
 }
 
 .footer img {
-  width: 100%;
+  width: 50%;
+  margin: 0;
 }
 
 @media (max-width: 800px) {

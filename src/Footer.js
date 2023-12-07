@@ -1,4 +1,5 @@
-import logo from "./icons_assets/Logo.svg";
+import logo from "./icons_assets/FooterLogo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,34 +11,34 @@ function Footer() {
         <ul>
           <h5>Navigation</h5>
           <li>
-            <a href="/" className="navlink">
+            <Link href="/" className="navlink">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="navlink">
+            <Link href="/about" className="navlink">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/menu" className="navlink">
+            <Link href="/menu" className="navlink">
               Menu
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/reservations" className="navlink">
+            <Link href="/reservations" className="navlink">
               Reservations
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/order" className="navlink">
+            <Link href="/order" className="navlink">
               Order Online
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/login" className="navlink">
+            <Link href="/login" className="navlink">
               Log in
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

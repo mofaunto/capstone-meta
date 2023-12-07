@@ -1,39 +1,39 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/" className="navlink">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/" className="navlink">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/" className="navlink">
             Menu
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/reservations" className="navlink">
             Reservations
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/" className="navlink">
             Order Online
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="navlink">
+          <Link href="/" className="navlink">
             Log in
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
