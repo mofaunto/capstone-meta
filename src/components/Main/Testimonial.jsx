@@ -1,8 +1,8 @@
-import ratings from "./icons_assets/rating.png";
-import profile1 from "./icons_assets/profile1.jpg";
-import profile2 from "./icons_assets/profile2.jpg";
-import profile3 from "./icons_assets/profile3.jpg";
-import profile4 from "./icons_assets/profile4.jpg";
+import ratings from "../../icons_assets/rating.png";
+import profile1 from "../../icons_assets/profile1.jpg";
+import profile2 from "../../icons_assets/profile2.jpg";
+import profile3 from "../../icons_assets/profile3.jpg";
+import profile4 from "../../icons_assets/profile4.jpg";
 
 const Testimonial = () => {
   return (

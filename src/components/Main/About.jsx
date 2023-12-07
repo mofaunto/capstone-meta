@@ -1,5 +1,5 @@
-import chefs from "./icons_assets/Mario and Adrian A.jpg";
-import interior from "./icons_assets/restaurant.jpg";
+import chefs from "../../icons_assets/Mario and Adrian A.jpg";
+import interior from "../../icons_assets/restaurant.jpg";
 
 const About = () => {
   return (
