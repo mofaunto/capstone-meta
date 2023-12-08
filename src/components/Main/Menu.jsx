@@ -11,8 +11,7 @@ const Menu = () => {
       image: salad,
       title: "Greek Salad",
       price: "$12.99",
-      description:
-        "The famous Greek salad of crispy lettuce, peppers, olives and our Chicago styled feta cheese, garnished with crunchy garlic, rosemary croutons.",
+      description: "Our great greek salad with our famous lemon sauce",
       order: "Order for delivery",
     },
     {
@@ -20,8 +19,7 @@ const Menu = () => {
       image: bruchetta,
       title: "Bruschetta",
       price: "$5.99",
-      description:
-        "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil; made perfect for an evening dinner.",
+      description: "Our Bruchetta is grilled perfectly for an evening dinner.",
       order: "Order for delivery",
     },
     {
@@ -29,8 +27,7 @@ const Menu = () => {
       image: dessert,
       title: "Lemon Dessert",
       price: "$5.00",
-      description:
-        "This comes straight from Grandma's recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.",
+      description: "This comes straight from Grandma's recipe book!",
       order: "Order for delivery",
     },
   ];
@@ -39,7 +36,7 @@ const Menu = () => {
     <div className="feature-menu-container">
       <div className="feature-menu-wrapper global-max-width">
         <div className="feature-menu-top">
-          <h3 className="feature-menu-top-title">This week specails!</h3>
+          <h3 className="feature-menu-top-title">Our specials!</h3>
 
           <button className="feature-menu-top-button">Online Menu</button>
         </div>

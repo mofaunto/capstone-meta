@@ -10,7 +10,7 @@ function Header() {
         <div className="header-wrapper global-max-width">
           <div className="logo-wrapper">
             <NavLink to="/">
-              {<img className="logo-img" src={Logo} alt="Little Lemon logo" />}
+              {<img className="logo" src={Logo} alt="Little Lemon logo" />}
             </NavLink>
           </div>
           <Nav />

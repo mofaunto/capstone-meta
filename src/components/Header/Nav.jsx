@@ -1,10 +1,10 @@
-import "./Nav.css";
-import NavItems from "./NavLinks";
+// import "./Nav.css";
+import NavLinks from "./NavLinks";
 
 const Nav = (props) => {
   return (
     <nav className="nav ">
-      <NavItems />
+      <NavLinks />
     </nav>
   );
 };

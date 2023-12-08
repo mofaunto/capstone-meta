@@ -1,10 +1,10 @@
 .feature-menu-container {
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 
 .feature-menu-wrapper {
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 .feature-menu-top {
@@ -14,19 +14,21 @@
 }
 
 .feature-menu-top-title {
-  font-size: 60px;
+  font-size: 64px;
   font-family: "Markazi Text", serif;
+  margin: 0;
 }
 
 .feature-menu-top-button {
-  height: 60px;
-  padding: 15px 30px;
-  font-weight: 500;
+  height: 64px;
+  padding: 16px 32px;
+  font-weight: 700;
   background-color: #f4ce14;
   color: #333333;
-  border-radius: 20px;
+  border-radius: 2rem;
   border: none;
-  font-size: 24px;
+  font-size: 1.3rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .feature-menu-top-button:hover {
@@ -34,15 +36,14 @@
   background-color: #333333;
   color: #f4ce14;
   transition: 0.3s;
+  box-shadow: 4px 4px 16px #333;
 }
 
 .feature-menu-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
-  /* width: 85%;
-  margin: 0 auto; */
-  padding: 50px 0;
+  gap: 32px;
+  padding: 48px 0;
 }
 
 @media screen and (max-width: 1024px) {

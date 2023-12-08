@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;500&display=swap");
 
 * {
   padding: 0;
@@ -7,13 +7,13 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 16pt;
   color: #333;
 }
 
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 14pt;
   color: #333;
 }

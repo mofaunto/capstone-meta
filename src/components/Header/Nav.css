@@ -28,7 +28,7 @@
 
 .hamburger,
 .close-hamburger {
-  line-height: 0.8;
+  line-height: 1;
   display: initial;
   z-index: 11;
 }
@@ -45,7 +45,8 @@
 .nav-menu li a:hover {
   color: #495e57;
 }
-*/ .hamburger,
+
+.hamburger,
 .close-hamburger {
   display: none;
 }

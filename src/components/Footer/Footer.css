@@ -1,16 +1,16 @@
 .footer {
   background-color: #495e57;
-  padding: 60px 0;
+  padding: 64px 0;
   width: 100%;
   /* height: 30vh; */
 }
 
 .footer-container {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: lightgray;
 }
 
 .footer-container img {
@@ -20,20 +20,31 @@
 .footer-des {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.footer-content ul li {
-  text-transform: capitalize;
+.footer-des h5 {
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
-.footer-content h5 {
-  margin-bottom: 30px;
+.footer-des ul {
+  padding: 0;
+}
+
+.footerlink {
+  color: lightgray;
+  left: 0;
+}
+
+.footerlink:hover {
+  color: #fff;
+  left: 0;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 48px;
   color: lightgray;
 }
 
@@ -63,12 +74,13 @@
     align-items: center;
   }
 
-  .opening-times,
+  .footer-nav,
   .contact,
-  .locations {
+  .socials {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footer-container img {

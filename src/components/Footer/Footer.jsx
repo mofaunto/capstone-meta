@@ -1,6 +1,6 @@
 import logo from "../../icons_assets/FooterLogo.png";
 import "./Footer.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,34 +9,76 @@ const Footer = () => {
         <div className="footer-container global-max-width">
           <div className="footer-des">
             <img src={logo} alt="Little Lemon logo" />
-            <div className="opening-times">
-              <h5>OPENING TIMES</h5>
+            <div className="footer-nav">
+              <h5>Site Navigation</h5>
               <ul>
-                <li>Mon - Wed: 10:30AM - 12:00AM</li>
-                <li>Fri: 12:00PM - 1:00AM</li>
-                <li>Sat - Sun: 10:30AM - 12:00AM</li>
+                <li>
+                  <Link href="/" className="footerlink">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="footerlink">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/menu" className="footerlink">
+                    Menu
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/reservation" className="footerlink">
+                    Reservations
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/order" className="footerlink">
+                    Order Online
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/login" className="footerlink">
+                    Login
+                  </Link>
+                </li>
               </ul>
             </div>
 
             <div className="contact">
-              <h5>CONTACT US</h5>
+              <h5>Contacts</h5>
               <ul>
                 <li>Tel: 123456789</li>
-                <li>Email: johndoe@littlelemon.com</li>
+                <li>Email: info@littlelemon.com</li>
+                <li>240 Blv, Chicago Downtown</li>
               </ul>
             </div>
 
-            <div className="locations">
-              <h5>LOCATIONS</h5>
+            <div className="socials">
+              <h5>Socials</h5>
               <ul>
-                <li>100 Blv, Boston MA</li>
+                <li>
+                  <Link href="/" className="footerlink">
+                    Instagram
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" className="footerlink">
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" className="footerlink">
+                    Pinterest
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="copyright">
-          <p>© 2023 Little Lemon Ltd. All rights reserved.</p>
+          <p>© 2023 Little Lemon Inc.</p>
         </div>
       </footer>
     </>
