@@ -9,8 +9,8 @@ function Main() {
     <main>
       <Hero />
       <Menu />
-      {/* <Testimonial />
-      <About /> */}
+      <Testimonial />
+      <About />
     </main>
   );
 }

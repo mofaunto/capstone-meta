@@ -49,14 +49,11 @@
 @media screen and (max-width: 1024px) {
   .feature-menu-bottom {
     width: 95%;
-  }
-
-  .feature-menu-bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .feature-menu-container {
     margin-top: 140px;
   }

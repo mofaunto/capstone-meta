@@ -20,6 +20,7 @@ const Hero = () => {
               <button className="reserve-btn">Reserve a Table</button>
             </NavLink>
           </div>
+
           <div className="hero-right">
             <div className="hero-image">
               <img src={heroShot} alt="Featured Dish" />

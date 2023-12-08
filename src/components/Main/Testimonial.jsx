@@ -3,43 +3,64 @@ import profile1 from "../../icons_assets/profile1.jpg";
 import profile2 from "../../icons_assets/profile2.jpg";
 import profile3 from "../../icons_assets/profile3.jpg";
 import profile4 from "../../icons_assets/profile4.jpg";
+import Profile from "../Profile/Profile";
+import "./Testimonial.css";
 
 const Testimonial = () => {
+  const reviews = [
+    {
+      id: 0,
+      image: profile1,
+      rating: ratings,
+      title: "Katie",
+      comment: "Their salad was the best one I tried in Chicago",
+    },
+    {
+      id: 1,
+      image: profile2,
+      rating: ratings,
+      title: "Hector",
+      comment: "Great location and great customer service!",
+    },
+    {
+      id: 2,
+      image: profile3,
+      rating: ratings,
+      title: "Marissa",
+      comment: "My compliments to the chefs!",
+    },
+    {
+      id: 3,
+      image: profile4,
+      rating: ratings,
+      title: "John",
+      comment: "Wish there were more locations, great food",
+    },
+  ];
+
   return (
-    <>
-      <div className="testimonial">
-        <div className="testimonial-head">
-          <h1>Testimonials</h1>
+    <div className="review-container">
+      <div className="review-wrapper">
+        <div className="review-top">
+          <h3 className="review-top-title">Testimonials</h3>
         </div>
 
-        <div className="review-container">
-          <div className="review">
-            <img src={profile1} alt="Content Customer" id="profile" />
-            <img src={ratings} alt="ratings" id="rating" />
-            <h2>Katie</h2>
-            <p>Their salad was the best one I tried in Chicago</p>
-          </div>
-          <div className="review">
-            <img src={profile2} alt="Content Customer" id="profile" />
-            <img src={ratings} alt="ratings" id="rating" />
-            <h2>Hector</h2>
-            <p>Great location and great customer service!</p>
-          </div>
-          <div className="review">
-            <img src={profile3} alt="Content Customer" id="profile" />
-            <img src={ratings} alt="ratings" id="rating" />
-            <h2>Marissa</h2>
-            <p>My compliments to the chefs!</p>
-          </div>
-          <div className="review">
-            <img src={profile4} alt="Content Customer" id="profile" />
-            <img src={ratings} alt="ratings" id="rating" />
-            <h2>John</h2>
-            <p>Wish there were more locations, great food</p>
-          </div>
-        </div>
+        <article className="review-bottom">
+          {reviews.map((item) => {
+            const { rating, image, title, comment, id } = item;
+            return (
+              <Profile
+                key={id}
+                rating={rating}
+                image={image}
+                title={title}
+                comment={comment}
+              ></Profile>
+            );
+          })}
+        </article>
       </div>
-    </>
+    </div>
   );
 };
 

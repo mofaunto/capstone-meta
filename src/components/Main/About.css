@@ -1,0 +1,56 @@
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px;
+}
+
+.about-left {
+  width: 80%;
+}
+
+.about-left h1 {
+  color: #f4ce14;
+}
+
+.about-left p {
+  width: 90%;
+  margin: 24px 0;
+}
+
+.about-right {
+  width: 100%;
+}
+
+/* .about-img {
+  height: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
+.about-img #chefs {
+  width: 60%;
+  height: 60%;
+  margin-top: 1rem;
+  margin-left: 12rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-img #interior {
+  width: 60%;
+  height: 60%;
+  margin-top: -8rem;
+  margin-left: 2rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+}
