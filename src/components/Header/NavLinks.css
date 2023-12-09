@@ -1,6 +1,7 @@
 .nav-items {
   display: flex;
   gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .nav-items li a {
@@ -29,6 +30,7 @@
     transform: translate(-100%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
+    margin-top: 0.8rem;
   }
 
   .nav-items {

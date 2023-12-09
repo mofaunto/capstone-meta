@@ -1,91 +1,93 @@
-.reservation-form-wrapper fieldset {
-  border: none;
-}
-
-.reservation-form-wrapper .field {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.reservation-form-wrapper .field label {
+.booking-form-wrapper {
   font-size: 18px;
-  margin: 0 0 5px 0px;
   font-weight: 500;
 }
 
-.reservation-form-wrapper input {
-  padding: 10px;
-  border: 1px solid rgba(51, 51, 51, 0.3);
-  border-radius: 5px;
+.booking-form-wrapper .occasion {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.booking-form input {
+  padding: 12px;
+  border: 1px solid rgba(51.51, 51, 0.3);
+  border-radius: 4px;
   width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.reservation-form-wrapper input[type="datetime"] {
-  color: #949494;
-}
-
-.reservation-form-wrapper .guestsdate {
-  display: grid;
-  grid-template-columns: 68% 28%;
-  gap: 4%;
-}
-
-.reservation-form-wrapper .occasion {
-  display: flex;
-  flex-direction: column;
-}
-
-.reservation-form-wrapper .options {
-  padding-right: 10px;
-  border: 1px solid rgba(51, 51, 51, 0.3);
-  border-radius: 5px;
-}
-
-.reservation-form-wrapper select {
-  padding: 10px;
-  outline: none;
-  border: none;
+.booking-form select {
+  padding: 12px;
   width: 100%;
   font-size: 18px;
-  color: #949494;
 }
 
-.reservation-form-btn {
+.booking-form .submit-button {
+  display: block;
   width: 100%;
   padding: 20px;
-  cursor: pointer;
-  background-color: #333;
+  background-color: #f4ce14;
+  color: #333;
   border: none;
   border-radius: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-.reservation-form-btn a {
-  color: #fff;
+.booking-form .submit-button:hover {
+  background-color: #333;
+  color: #f4ce14;
+  cursor: pointer;
 }
 
-.reservation-form-btn:hover {
-  background-color: #495e57;
-  transition: 0.3s;
-}
-
-.error-message {
-  font-size: 15px;
+.booking-form .error {
+  display: block;
   color: red;
-  margin-top: 5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.booking-form .invalid {
+  outline: 1px solid red;
 }
 
 .requiredSymbol {
   color: red;
 }
 
-@media screen and (max-width: 1024px) {
-  .guestsdate {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1165px) {
+  .booking-form-wrapper {
+    max-width: 70%;
+  }
+
+  .booking-form-wrapper input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .booking-form-wrapper {
+    max-width: 70%;
+    padding: 10px;
+  }
+
+  .booking-form label {
+    font-size: 16px;
+  }
+
+  .booking-form .action-button {
+    padding: 5px;
+  }
+
+  .booking-form-wrapper input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .booking-form label {
+    font-size: 14px;
   }
 }
