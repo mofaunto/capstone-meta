@@ -5,24 +5,20 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object({
-  name: yup.string().required("Full name is a required field!"),
+  name: yup.string().required("Full name is a required!"),
   email: yup
     .string()
-    .required("Email is a required field!")
-    .email("Email is not valid!"),
-  cellPhone: yup.string().required("Telephone is a required field!"),
-  // .matches(
-  //   /^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/,
-  //   "Phone number must match the form 233 00 000 0000"
-  // ),
+    .required("Email is a required!")
+    .email("Please enter a valid email!"),
   guests: yup
     .number()
     .min(1, "There must be at least 1 guest!")
     .required("Please specify number of guests per table!"),
-  date: yup.string().required("Please select date and time!"),
+  date: yup.string().required("Please select the date!"),
+  time: yup.string().required("Please select the time!"),
 });
 
-function ReservationForm() {
+function BookingForm() {
   const {
     handleSubmit,
     register,
@@ -42,72 +38,90 @@ function ReservationForm() {
     >
       <fieldset>
         <div className="field">
-          <label htmlFor="name">Full Name*</label>
+          <label htmlFor="name">
+            Full Name<span className="requiredSymbol"> *</span>
+          </label>
           <input
             type="text"
             placeholder="John Doe"
             name="name"
+            id="name"
             {...register("name")}
           />
           <span className="error-message">{errors.name?.message}</span>
         </div>
 
         <div className="field">
-          <label htmlFor="email">Email*</label>
+          <label htmlFor="email">
+            Email<span className="requiredSymbol"> *</span>
+          </label>
           <input
             type="text"
             placeholder="jonhdoe@email.com"
             name="email"
+            id="email"
             {...register("email")}
           />
           <span className="error-message">{errors.email?.message}</span>
         </div>
 
-        <div className="field">
-          <label htmlFor="cellPhone">Cell Phone*</label>
-          <input
-            type="tel"
-            placeholder="123 123 1234"
-            name="cellPhone"
-            {...register("cellPhone")}
-          />
-          <span className="error-message">{errors.telephone?.message}</span>
-        </div>
-
         <div className="field occasion">
           <label htmlFor="occasion">Occasion (optional)</label>
           <div className="options">
-            <select name="occasion" {...register("occasion")}>
+            <select name="occasion" id="occasion" {...register("occasion")}>
               <option value="select">Select Occasion</option>
               <option value="birthday">Birthday</option>
               <option value="anniversary">Anniversary</option>
+              <option value="other">Other</option>
             </select>
           </div>
         </div>
 
         <div className="field guest">
-          <label htmlFor="guests">Guests</label>
+          <label htmlFor="guests">
+            Guests<span className="requiredSymbol"> *</span>
+          </label>
           <input
             type="number"
             placeholder="2"
             min={1}
             name="guests"
+            id="guests"
             {...register("guests")}
           />
           <span className="error-message">{errors.guests?.message}</span>
         </div>
 
         <div className="field">
-          <label htmlFor="date">Date & Time</label>
-          <input type="datetime-local" name="date" {...register("date")} />
+          <label htmlFor="date">
+            Date<span className="requiredSymbol"> *</span>
+          </label>
+          <input type="date" name="date" id="date" {...register("date")} />
           <span className="error-message">{errors.date?.message}</span>
         </div>
+
+        <div className="field">
+          <label htmlFor="time">
+            Time<span className="requiredSymbol"> *</span>
+          </label>
+          <div className="options">
+            <select name="time" id="time" {...register("time")}>
+              <option value="12:00PM">12:00 PM</option>
+              <option value="12:30PM">12:30 PM</option>
+              <option value="1:00PM">1:00 PM</option>
+              <option value="1:30PM">1:30 PM</option>
+              <option value="2:00PM">2:00 PM</option>
+              <option value="2:30PM">2:30 PM</option>
+            </select>
+          </div>
+          <span className="error-message">{errors.time?.message}</span>
+        </div>
         <button className="reservation-form-btn" type="submit">
-          Reserve
+          <a href="/confirmed">Reserve</a>
         </button>
       </fieldset>
     </form>
   );
 }
 
-export default ReservationForm;
+export default BookingForm;

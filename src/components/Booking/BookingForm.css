@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-.reservation-form-wrapper input[type="datetime-local"] {
+.reservation-form-wrapper input[type="datetime"] {
   color: #949494;
 }
 
@@ -48,7 +48,7 @@
   outline: none;
   border: none;
   width: 100%;
-  font-size: 15px;
+  font-size: 18px;
   color: #949494;
 }
 
@@ -64,6 +64,10 @@
   color: #fff;
 }
 
+.reservation-form-btn a {
+  color: #fff;
+}
+
 .reservation-form-btn:hover {
   background-color: #495e57;
   transition: 0.3s;
@@ -73,6 +77,10 @@
   font-size: 15px;
   color: red;
   margin-top: 5px;
+}
+
+.requiredSymbol {
+  color: red;
 }
 
 @media screen and (max-width: 1024px) {
