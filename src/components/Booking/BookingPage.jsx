@@ -17,7 +17,7 @@ function BookingPage() {
       <header className="booking-wrapper">
         <div className="booking-container global-max-width">
           <div className="booking-form">
-            <h1>Personal Details</h1>
+            <h1>Reserve a table</h1>
             <p>
               Please fill in and submit form to book your reservation at Little
               Lemon
