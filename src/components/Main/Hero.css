@@ -94,30 +94,30 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .hero {
+    max-width: 100%;
     height: auto;
+    margin: 0 auto;
   }
   .hero-container {
+    display: flex;
     flex-direction: column;
   }
 
   .hero-left {
-    width: 100%;
+    max-width: 80%;
     text-align: center;
+    margin: 0 auto;
   }
 
-  .hero-image {
+  .hero-right {
     display: none;
   }
 
   .hero-left p {
     width: 100%;
     font-size: 20px;
-  }
-
-  .hero-right {
-    display: none;
   }
 
   .reverve-btn {

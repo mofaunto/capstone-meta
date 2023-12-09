@@ -16,12 +16,11 @@ const About = () => {
               our cozy restaurant and feel the taste of the Mediterranian!
             </p>
           </div>
-        </div>
-
-        <div className="about-right">
-          <div className="about-img">
-            <img src={chefs} alt="Chefs" id="chefs" />
-            <img src={interior} alt="Interior of Restaurant" id="interior" />
+          <div className="about-right">
+            <div className="about-img">
+              <img src={chefs} alt="Chefs" id="chefs" />
+              <img src={interior} alt="Interior of Restaurant" id="interior" />
+            </div>
           </div>
         </div>
       </div>
