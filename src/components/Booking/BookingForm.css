@@ -60,6 +60,7 @@
 @media screen and (max-width: 1165px) {
   .booking-form-wrapper {
     max-width: 100%;
+    padding: 1rem;
   }
 
   .booking-form-wrapper input {
@@ -93,6 +94,10 @@
 }
 
 @media screen and (max-width: 320px) {
+  .booking-form-wrapper {
+    max-width: 100%;
+    padding: 1rem;
+  }
   .booking-container {
     padding: 2vw;
   }
