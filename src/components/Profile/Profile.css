@@ -2,11 +2,16 @@
   background-color: #f2f5f9;
   border-radius: 2rem;
   box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.5);
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile-rating {
   position: absolute;
-  top: 64px;
+  top: 80px;
 }
 
 .profile-img img {
@@ -21,10 +26,11 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  border-radius: 0 0 5rem 5rem;
+  border-radius: 0 0 2rem 2rem;
 }
 
-.profile-title {
+.profile-title,
+.profile-comment {
   display: flex;
   justify-content: center;
   margin: 1rem;
@@ -35,54 +41,17 @@
   font-weight: 700;
 }
 
-.profile-comment {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-}
-
 .profile-comment p {
   font-size: 1.5rem;
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .profile-container {
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-  }
-
+@media screen and (min-width: 800px) {
   .profile-img {
-    border-radius: 0 0 2rem 2rem;
-  }
-
-  .profile-rating {
-    position: absolute;
-    top: 100px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .profile-container {
-    max-width: 400px;
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .profile-img {
-    position: relative;
-    width: 100%;
     height: 400px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    border-radius: 0 0 2rem 2rem;
   }
 
   .profile-rating {
-    position: absolute;
     top: 120px;
   }
 }
