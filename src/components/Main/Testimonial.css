@@ -2,6 +2,7 @@
   width: 100%;
   margin: 1rem auto;
   background: #495e57;
+  padding: 1rem;
 }
 
 .review-wrapper {
@@ -12,27 +13,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .review-top-title {
-  font-size: 80px;
+  font-size: 4vw;
   font-family: "Markazi Text", serif;
   margin-top: 1rem;
   color: #fff;
+  text-align: center;
 }
 
 .review-bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  padding: 48px 0;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
   .review-bottom {
-    max-width: 80%;
+    max-width: 100%;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
   }
@@ -44,32 +45,13 @@
   }
 
   .review-bottom {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
 
   .review-top-title {
-    font-size: 64px;
+    font-size: 4rem;
   }
 }
-
-/* @media screen and (max-width: 400px) {
-  .review-container {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .review-bottom {
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .review-top-title {
-    font-size: 64px;
-  }
-} */

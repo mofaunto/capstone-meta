@@ -103,17 +103,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .about-img #chefs {
-    width: 50%;
-    margin: 0 1rem;
+    width: 80%;
+    margin: 0.5rem 1rem;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
   }
 
   .about-img #interior {
-    width: 50%;
-    margin: 0 1rem;
+    width: 80%;
+    margin: 0.5rem 1rem;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
   }
 }

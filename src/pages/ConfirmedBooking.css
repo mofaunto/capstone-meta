@@ -9,12 +9,13 @@
 }
 
 .booking-confirmed-img {
-  width: 50%;
+  width: 70%;
+  max-width: 400px;
   margin-bottom: 2rem;
 }
 
 .booking-confirmed-img img {
-  width: 20%;
+  width: 100%;
 }
 
 .booking-confirmed-text {
@@ -22,20 +23,21 @@
 }
 
 .booking-confirmed-text h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: #4bae4f;
 }
 
 .booking-confirmed-text p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .returnbutton {
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   margin-top: 3rem;
   padding: 24px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   background-color: #f4ce14;
   color: #333;
