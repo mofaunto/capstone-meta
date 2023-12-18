@@ -91,3 +91,21 @@
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .booking-container {
+    padding: 2vw;
+  }
+
+  .booking-form {
+    padding: 3vw;
+  }
+
+  .booking-form h1 {
+    font-size: 2em;
+  }
+
+  .booking-form p {
+    font-size: 0.8em;
+  }
+}
